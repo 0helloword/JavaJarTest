@@ -62,7 +62,7 @@ public class SitTest {
 	    driver.findElement(By.id("mobile")).sendKeys(args[7]);//修改数据--电话号码
 	    new Select(driver.findElement(By.id("repaymentType"))).selectByVisibleText("银行代扣");
 	    Thread.sleep(2000);
-	    new Select(driver.findElement(By.id("repaymentBank"))).selectByVisibleText("中国工商银行");
+	    new Select(driver.findElement(By.id("repaymentBank"))).selectByVisibleText("招商银行");
 	    driver.findElement(By.id("repaymentAcc")).clear();
 	    driver.findElement(By.id("repaymentAcc")).sendKeys(args[8]);//修改数据--银行账号
 	    Thread.sleep(2000);
