@@ -218,8 +218,8 @@ public class SitTest {
 	    new Select(driver.findElement(By.name("userEvaluate"))).selectByVisibleText("1");
 	    driver.findElement(By.id("userEvaluateCode")).clear();
 	    Thread.sleep(2000);
-	   // driver.findElement(By.id("userEvaluateCode")).sendKeys(args[2]);//根据个人登录密码填写
-	    //driver.findElement(By.id("save_but")).click();
+	    driver.findElement(By.id("userEvaluateCode")).sendKeys(args[2]);//根据个人登录密码填写
+	    driver.findElement(By.id("save_but")).click();
 	}
 
 
