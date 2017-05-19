@@ -1,5 +1,5 @@
 //可生成可执行的JAR文件，参数既可在arguements中配置，也可以在命令行输入，或者写成bat文件
-package test2;
+package test;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -128,8 +128,22 @@ public class SitTest {
 	    driver.findElement(By.id("householdRidge")).sendKeys("10栋");
 	    driver.findElement(By.id("householdHome")).clear();
 	    driver.findElement(By.id("householdHome")).sendKeys("101");
-	    new Select(driver.findElement(By.id("addreRegist"))).selectByVisibleText("相同");
+	    new Select(driver.findElement(By.id("addreRegist"))).selectByVisibleText("不同");
 	    Thread.sleep(1000);
+	    new Select(driver.findElement(By.id("liveProv"))).selectByVisibleText("广东省");
+	  Thread.sleep(1000);
+	    new Select(driver.findElement(By.id("liveCity"))).selectByVisibleText("深圳市");
+	  Thread.sleep(1000);
+	    new Select(driver.findElement(By.id("liveTown"))).selectByVisibleText("福田区");
+	    driver.findElement(By.id("liveZhen")).clear();
+	    driver.findElement(By.id("liveZhen")).sendKeys("湖贝新村");
+	    driver.findElement(By.id("liveStr")).clear();
+	    driver.findElement(By.id("liveStr")).sendKeys("文锦路");
+	    driver.findElement(By.id("liveRidge")).clear();
+	    driver.findElement(By.id("liveRidge")).sendKeys("10栋");
+	    driver.findElement(By.id("liveHome")).clear();
+	    driver.findElement(By.id("liveHome")).sendKeys("101");
+	 	    Thread.sleep(1000);
 	    new Select(driver.findElement(By.name("postState"))).selectByVisibleText("与现住址相同");
 	    Thread.sleep(2000);
 	    //收入信息
